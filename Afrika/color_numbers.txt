@@ -1,0 +1,74 @@
+<div id="right">
+				<div class="black_phone">
+				  <span class="clr1">(</span>
+				  <span class="clr2">4</span>
+				  <span class="clr3">7</span>
+				  <span class="clr6">3</span>
+				  <span class="clr5">)</span>
+				  <span class="clr4">1</span>
+				  <span class="clr1">7</span>
+				   <span class="clr7">8</span>
+				  <span class="clr2">-</span>
+				  <span class="clr2">3</span>
+				  <span class="clr3">6</span>
+				    <span class="clr3">-</span>
+				  <span class="clr6">9</span>
+				  <span class="clr5">2</span>
+				</div>
+
+
+css
+
+
+div.black_phone, div.color_phone{
+    cursor:pointer;
+	float: right;
+	width: 400px;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr1{
+    color:orange;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr2{
+    color:green;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr3{
+    color:dodgerblue;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr4{
+    color:red;
+	text-align: right;
+	font: 30px verdana;
+  }
+   div.color_phone span.clr5{
+    color:blueviolet;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr6{
+    color:blue;
+	text-align: right;
+	font: 30px verdana;
+  }
+  div.color_phone span.clr7{
+    color:gold;
+	text-align: right;
+	font: 30px verdana;
+  }
+
+
+
+
+
+js
+
+
+
+<script  type="text/javascript">   $(document).ready(function(){ 	$('div.black_phone').mouseover(function(){		$(this).removeClass('black_phone');		$(this).addClass('color_phone');			});	$('div.black_phone').mouseout(function(){		$(this).removeClass('color_phone');		$(this).addClass('black_phone');			});});</script>

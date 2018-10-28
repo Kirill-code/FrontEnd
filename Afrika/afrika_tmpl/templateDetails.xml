@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">      
+<name>Afrika</name>      
+<creationDate>August 2011</creationDate>      
+<author>Foursite</author>      
+<copyright>GPL</copyright>      
+<authorEmail>office@foursite.ru</authorEmail>      
+<authorUrl>http://foursite.ru/</authorUrl>      
+<version>1.0</version>      
+<description>Temp for Afrika</description>
+<files>            
+ <filename>index.php</filename>            
+ <filename>templateDetails.xml</filename>                            
+</files>
+<images>
+ <filename>template_thumbnail.png</filename>  
+ <filename>images/forward.png</filename>   
+ <filename>images/back.png</filename>   
+  <filename>images/backg.png</filename>   
+   <filename>images/ball.png</filename>   
+    <filename>images/banner.png</filename>   
+	 <filename>images/fotter.png</filename>   
+	  <filename>images/list.png</filename>   
+	   <filename>images/logo.png</filename>   
+</images>
+<css>
+ <filename>css/template_css.css</filename>     
+</css>
+<positions>                    
+ <position>top1</position>            
+ <position>top2</position>            
+</positions>         
+</install>

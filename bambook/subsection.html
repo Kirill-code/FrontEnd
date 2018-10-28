@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<link rel="stylesheet" type="text/css" href="bamb.css">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+ <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			$("a.gallery2").fancybox(
+			{						
+			"padding" : 20, 
+			"imageScale" : false,
+			"zoomOpacity" : false,
+			"zoomSpeedIn" : 500,
+			"zoomSpeedOut" : 500,
+			"zoomSpeedChange" : 500, 
+			"frameWidth" : 700,	 
+			"frameHeight" : 600, 
+			"overlayShow" : true, 
+			"overlayOpacity" : 0.8,
+			"hideOnContentClick" :false, 
+			"centerOnScroll" : true
+				
+			});
+			$("a.gallery").fancybox();
+			$("#menu a, .anim").hover( function() {
+			$(this).animate({"paddingLeft" : "10px"}, 300)},
+			function() {$(this).animate({"paddingLeft" : "0"}, 300);
+			});
+
+			$("a.iframe").fancybox(
+			{								  
+						"frameWidth" : 800,	 // ширина окна, px (425px - по умолчанию)
+						"frameHeight" : 600 // высота окна, px(355px - по умолчанию)
+											  
+			});
+
+					
+					});
+	</script>
+	<link rel="stylesheet" href="path-to-file/fancybox.css" type="text/css" media="screen" />
+  <title>Бамбуковый рай</title>
+</head>
+  <body>
+	  <div id="header_s"></div>
+	  <div id="header">
+		<div id="number">2-231-231</div>
+		<div class="top_main">
+			<div id="banner"><img src="images/banner2.png"  height=56px	width=250px></div>
+				<div id="list">	
+					<ul>
+						<li><a href="1.html">КАТАЛОГ</a></li>
+						<li><a href="1.html">ТЕХНОЛОГИЯ</a></li>
+						<li><a href="1.html">ИНТЕРЬЕР</a></li>
+						<li><a href="1.html">ДОСТАВКА</a></li>
+						<li><a href="1.html">КОНТАКТЫ</a></li>
+					</ul>
+				</div>
+			<div id="basket"><a href="1.html"><p>ВАША КОРЗИНА</p></a><p><a href="1.html">0 товаров</a>| 0&#8399 </p></div>
+		</div>		
+	    </div>
+	  <div id="header_s"></div> 
+	  <div id="subtitle">
+		<div id="pic_block">
+			<div class="block2"><a href="1.html"><img src="images/basket.png" ></a></div>
+			<div class="block2"><a href="1.html"><img src="images/truck.png" ></a></div>
+			<div class="block2"><a href="1.html"><img src="images/mail.png" ></a></div>
+		</div>	
+		</div>
+		
+		<div id="content_sub">			  
+			<div class="left">
+				<div id="content_lnk">
+					<div id="cont_lnk">
+						<ul>
+								<li><a href="1.html">Бамбуковый паркет</a></li>
+								<li><a href="1.html">Мебель из бамбука</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk">	
+						<ul>	
+								<li><a href="1.html">Бамбуковый плинтус</a></li>
+								<li><a href="1.html">Стволы из блок-хаусы</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk2">
+						<ul>
+								<li><a href="1.html">Плиты из бамбукового-теса</a></li>
+								<li><a href="1.html">Сопутствующие товары</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk">
+						<ul>
+								<li><a href="1.html">Натуральные обои</a></li>
+								<li><a href="1.html">Бамбуковое полотно</a></li>
+						</ul>
+					</div>
+
+				</div>
+			<div id="cont_sub_top">	
+				<div id="line_sab">
+					<span class="line_small_sab" ></span><span class="line_big_sab"></span>
+				</div>
+				<div id="letters_sab">
+					<span class="letters_sab_l" >Категории</span><span class="letters_sab_r" >Паркет из бамбука	</span>
+				</div>
+				<div id="gray_block"></div>
+				<div id="big_block_sab">
+					<a  class="gallery" href="images/park.png"><img src="images/park.png" ></a>
+				</div>
+				<div id="right_block_sab_big">
+					<div id="right_block_sab_top">
+						<p><a href="1.html">Паркет из бамбука горизонтальный,</a></p>
+						<p><a  href="1.html">цвет натур выбеленный </a></p>
+						<p><a  href="1.html">Страна - производитель: Индонезия </a></p>
+						<p><a  href="1.html">Размер: 960x96x15</a></p>
+						<p><a  href="1.html">Наличие: На складе</a></p>
+					</div>
+					<div id="right_block_sab_bottom">
+						<div id="cost_sab_block"> 1600 &#8399 </div>
+						<div id="order_sab_block"><a href="1.html"><img src="images/order_button.png" ></a> </div>
+					</div>
+						
+				</div>
+			</div>
+			<div id="line_sab_bot"></div>
+			<div id="content_txt_sub_bot"><span class="letters" >С этой продукцией покупают</span></div>
+			<div id="content_block_sub">
+					<div class="block"><a  class="gallery2" rel="group" href="images/park1.png"><img src="images/park1.png" height=170px width=160px></a><p>Паркет из бамбука"Прессованный", тигровый</p><p> 1450 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park2.png"><img src="images/park2.png" height=170px width=160px ></a><p>Паркет из бамбука горизонтальный, цвет кофе выбеленный  </p><p> 1600 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park3.png"><img src="images/park3.png" height=170px width=160px></a><p>Паркет из бамбукапокрытие шёлк матовый,цвет кофе </p><p> 1380 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park4.png"><img src="images/park4.png" height=170px width=160px></a><p>Паркет из бамбука горизонтальный глянцевый,цвет натур </p><p>1380 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park5.png"><img src="images/park5.png" height=170px width=160px></a><p>Массивная доска из бамбукагоризонтальная, цвет кофе</p><p>1200 &#8399 </p></div>
+			</div>
+			<div id="line_sab_bot"></div>
+			<div id="content_txt_sub_bot"><span class="letters" >Похожие товары</span></div>
+			<div id="content_block_sub">
+					<div class="block"><a  class="gallery2" rel="group" href="images/park6.png"><img src="images/park6.png" height=170px width=160px></a><p>Паркет из бамбука вертикальный матовый, цвет натур </p><p> 1380 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park7.png"><img src="images/park7.png" height=170px width=160px ></a><p>Паркет из бамбук авертикальный матовый,цвет кофе  </p><p> 1150 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park8.png"><img src="images/park8.png" height=170px width=160px></a><p>Паркет из бамбука  покрытие шёлк полуматовый,цвет кофе  </p><p> 1050 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park9.png"><img src="images/park9.png" height=170px width=160px></a><p>Паркет из бамбука горизонтальный не лакированный </p><p>1050 &#8399 </p></div>
+					<div class="block"><a  class="gallery2" rel="group" href="images/park.png"><img src="images/park.png" height=170px width=160px></a><p>Паркет из бамбука горизонтальный глянцевый,цвет натур </p><p>1380 &#8399 </p></div>
+			</div>
+		</div>
+	</div>	
+	  <div id="footer">
+			<div id="footer_lnk">	
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Технология</a></a></li>
+						<li><a href="1.html">Интерьер</a></li>
+						<li><a href="1.html">Доставка</a></li>
+						<li><a href="1.html">Контакты</a></li>
+				</ul>
+				</div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Каталог</a></li>
+						<li><a href="1.html">Бамбуковый паркет</a></li>
+						<li><a href="1.html">Бамбуковый плинтус</a></li>
+						<li><a href="1.html">Мебель из бамбука</a></li>
+					</ul>
+				</div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Аксессуары</a></li>
+						<li><a href="1.html">Жалюзи</a></li>
+						<li><a href="1.html">Обои</a></li>
+						<li><a href="1.html">Плиты из бамбукового теса</a></li>
+				</ul></div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Стволы и блок-хаусы</a></li>
+						<li><a href="1.html">Бамбуковое полотно</a></li>
+						<li><a href="1.html">Клей и сопутствующие товары</a></li>
+					</ul>
+				</div>
+			</div>	
+	 </div>
+	 <div id="stat_footer">
+		
+	 </div>
+ </body>
+</html>

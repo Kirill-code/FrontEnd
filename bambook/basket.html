@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<link rel="stylesheet" type="text/css" href="bamb.css">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+  <link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.gallery").fancybox();		
+			$("#menu a, .anim").hover( function() {
+			$(this).animate({"paddingLeft" : "10px"}, 300)},
+			function() {$(this).animate({"paddingLeft" : "0"}, 300);
+			});
+			$('.png_id').click(function(){
+					$(this).parents('tr').remove();
+				  });
+					
+			});
+	</script>
+	<script type='text/javascript'>
+    
+    function calculate(quant, prise, updElemId){
+           
+        var anum = /(^\d+$)|(^\d+\.\d+$)/;
+        if (!anum.test(quant)) {
+            
+            alert('Введенное значение не является числом!');
+            return;
+        }
+           
+        goodSum = quant * prise;
+           
+        document.getElementById(updElemId).innerHTML = goodSum;
+            
+        var meForm   = document.getElementById('me_order_form');
+           
+        var bdoArray  = meForm.getElementsByTagName('bdo');
+           
+        var allSumm = 0;
+            
+        for (j = 0; j < bdoArray.length; j++) {
+                
+            allSumm = allSumm + parseFloat(bdoArray[j].innerHTML);
+        }
+           
+        document.getElementById('total_sum').innerHTML = allSumm;
+    }
+</script>
+	
+	<link rel="stylesheet" href="path-to-file/fancybox.css" type="text/css" media="screen" />
+  <title>Бамбуковый рай</title>
+</head>
+  <body>
+	  <div id="header_s"></div>
+	  <div id="header">
+		<div id="number">2-231-231</div>
+		<div class="top_main">
+			<div id="banner"><img src="images/banner2.png"  height=56px	width=250px></div>
+				<div id="list">	
+					<ul>
+						<li><a href="1.html">КАТАЛОГ</a></li>
+						<li><a href="1.html">ТЕХНОЛОГИЯ</a></li>
+						<li><a href="1.html">ИНТЕРЬЕР</a></li>
+						<li><a href="1.html">ДОСТАВКА</a></li>
+						<li><a href="1.html">КОНТАКТЫ</a></li>
+					</ul>
+				</div>
+			<div id="basket"><p><a href="1.html">ВАША КОРЗИНА</a></p><p><a href="1.html">0 товаров</a> | 0&#8399 </p></div>
+		</div>		
+	    </div>
+	  <div id="header_s"></div> 
+	  <div id="subtitle">
+		<div id="pic_block">
+			<div class="block2"><a href="1.html"><img src="images/basket.png" ></a></div>
+			<div class="block2"><a href="1.html"><img src="images/truck.png" ></a></div>
+			<div class="block2"><a href="1.html"><img src="images/mail.png" ></a></div>
+		</div>	
+		</div>
+		
+	<div id="content">			  
+			<div class="left">
+				<div id="content_lnk">
+					<div id="cont_lnk">
+						<ul>
+								<li><a href="1.html">Бамбуковый паркет</a></li>
+								<li><a href="1.html">Мебель из бамбука</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk">	
+						<ul>	
+								<li><a href="1.html">Бамбуковый плинтус</a></li>
+								<li><a href="1.html">Стволы из блок-хаусы</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk2">
+						<ul>
+								<li><a href="1.html">Плиты из бамбукового-теса</a></li>
+								<li><a href="1.html">Сопутствующие товары</a></li>
+						</ul>
+					</div>
+					<div id="cont_lnk">
+						<ul>
+								<li><a href="1.html">Натуральные обои</a></li>
+								<li><a href="1.html">Бамбуковое полотно</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div id="line"></div>
+					<div id="content_txt"><span class="letters" >Ваша корзина	</span><span class="r_letters" >Итого:	</span></div>
+				<div id="left_basket_cont">
+					<form id='me_order_form'>	
+						<table class="basket_table" >
+							<thead>	
+								<tr>
+									<th class="t_numb">Выбор</th>
+									<th class="t_name">Наименование</th>
+									<th class="t_del">Удалить</th>
+									<th class="t_count">Количество</th>
+									<th class="t_cost">Цена</th>
+								</tr>
+							</thead>
+							<tbody>	
+								<tr>
+									<td><a  class="gallery" href="images/park.png"><img src="images/t1.png" class="passe_partout_s" height=59px width=49px></a></td>
+									<td>Паркет из бамбука</td>
+									<td><img src="images/trash.png" class="png_id" ></td>
+									<td><div id="numbers"><input value='1' id='inp_1' onChange='calculate(this.value, "1600", "bdo_1")'></input></div></td>
+									<td><p> <bdo dir='ltr' id='bdo_1'>1600</bdo>  &#8399 </p></td>
+								</tr>
+								<tr>
+									<td><a  class="gallery" href="images/park3.png"><img src="images/t2.png" class="passe_partout_s" height=59px width=49px></a></td>
+									<td>Паркетная доска</td>
+									<td><img src="images/trash.png" class="png_id" > </td>
+									<td><div id="numbers"><input value='1' id='inp_2' onChange='calculate(this.value, "1600", "bdo_2")'></input> </div></td>
+									<td><p> <bdo dir='ltr' id='bdo_2'>1600</bdo> &#8399 </p></td>
+								</tr>
+								<tr>
+									<td><a  class="gallery"  href="images/t3_b.jpg"><img src="images/t3.png" class="passe_partout_s" height=59px width=49px></a></td>
+									<td>Обои №С/1037</td>
+									<td><img src="images/trash.png"  class="png_id" ></td>
+									<td><div id="numbers"><input value='1' id='inp_3' onChange='calculate(this.value, "1600", "bdo_3")'></input></div></td>
+									<td><p> <bdo dir='ltr' id='bdo_3'>1600</bdo> &#8399 </p></td>
+								</tr>
+								<tr>
+									<td><a  class="gallery"  title="Извините,изображения с большим разрешением нет" href="empty.html"><img src="images/t4.png"  class="passe_partout_s" height=59px width=49px></a></td>
+									<td>Набор кружек на подставке</td> 
+									<td><img src="images/trash.png" class="png_id" > </td>
+									<td><div id="numbers"><input value='1' id='inp_4' onChange='calculate(this.value, "1600", "bdo_4")'></input></div></td>
+									<td><p> <bdo dir='ltr' id='bdo_4'>1600</bdo> &#8399 </p></td>
+								</tr>
+							</tbody>
+						</table>
+					</form>	
+					<div id="line_b"></div>
+					<div id="content_txt2"><span class="letters" >Подтвердите Ваш заказ</span></div>
+					<div id="basket_form_h">Все поля, отмеченные *, обязательны для заполнения</div>
+					<div id="basket_form_con">
+						<table class="basket_small_table" >
+							<tbody>	
+								<tr>
+									<td class="b_td_l">* Контактное лицо:</td>
+									<td   ><input class="b_td_r"></input></td>
+								</tr>
+								<tr>
+									<td class="b_td_l">* Телефон:</td>
+									<td  ><input class="b_td_r"></input></td>
+								</tr>
+								<tr>
+									<td class="b_td_l">* E-mail:</td>
+									<td  ><input class="b_td_r"></input></td>
+								</tr>
+								<tr>
+									<td class="b_td_l">Ваш комментарий:</td>
+									<td  ><input class="b_td_r2"></input></td>
+								</tr>
+						</table>
+						<div id="send_b"><a href="1.html"><img src="images/send_buttom.png"></a></div>
+					</div>
+					
+				</div>
+				<div id="right_basket_cont"> <span id='total_sum'>6400</span> </div>
+			</div>
+	</div>
+	
+	  <div id="footer">
+			<div id="footer_lnk">	
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Технология</a></a></li>
+						<li><a href="1.html">Интерьер</a></li>
+						<li><a href="1.html">Доставка</a></li>
+						<li><a href="1.html">Контакты</a></li>
+				</ul>
+				</div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Каталог</a></li>
+						<li><a href="1.html">Бамбуковый паркет</a></li>
+						<li><a href="1.html">Бамбуковый плинтус</a></li>
+						<li><a href="1.html">Мебель из бамбука</a></li>
+					</ul>
+				</div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Аксессуары</a></li>
+						<li><a href="1.html">Жалюзи</a></li>
+						<li><a href="1.html">Обои</a></li>
+						<li><a href="1.html">Плиты из бамбукового теса</a></li>
+				</ul></div>
+				<div class="block_fo">
+					<ul>
+						<li><a href="1.html">Стволы и блок-хаусы</a></li>
+						<li><a href="1.html">Бамбуковое полотно</a></li>
+						<li><a href="1.html">Клей и сопутствующие товары</a></li>
+					</ul>
+				</div>
+			</div>	
+	 </div>
+	 <div id="stat_footer">
+		
+	 </div>
+ </body>
+</html>
